@@ -33,8 +33,8 @@
     
  }
  img{
-     display: block;
-     margin-bottom: 30px;
+    display: block;
+    max-width: 100%;
 
  }
 
@@ -51,6 +51,7 @@
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    
 
      }
 
@@ -65,8 +66,7 @@ h3{
      list-style: none;
  }
 .page-header{
-    padding-top: 24px;
-    padding-bottom: 24px;
+    border-bottom: 24px;
     margin: 0;
 }
 .main-nav {
@@ -95,7 +95,7 @@ h3{
         line-height: 1.19;
       
 }
-.one-unit{
+.logo-heder{
     margin-right: 93px;
    
 
@@ -135,6 +135,9 @@ h3{
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14; 
+
+        padding-top: 32px;
+        padding-bottom: 32px;
         
         
  }
@@ -162,21 +165,36 @@ h3{
  /*блок герой*/
 
  .section{
-     background-color: var(--title-text-color);
+     background-color: #2F303A;
      color:var(--color-color);
 
-     font-weight: 900;
-     font-size: 44px;
-
-     line-height: 1.36;
-     text-align: center;
-     padding: 200px 200px 200px 200px ;
+     font-family: 'Roboto';
     
+     font-size: 44px;
+     line-height: 1.36;
+
+     display: block;
+     text-align: center;
+     padding-top: 200px;
+     padding-bottom: 200px;
 
  }
+ 
+
+
+
+
+
+
+
  .section-title{
      color:var(--color-color);
      margin-bottom: 30px ;
+     max-width: 1000px;
+     margin: 0;
+     padding-left: 200px;
+    
+     
     
  }
  .button-primary{  
@@ -201,23 +219,19 @@ h3{
     background-color: var(--color-color);
 
  }
-     
-     
- 
-
  
  /*почему вибирают нас*/
+
   .section-list .title{
       color: var(--title-text-color); 
-      display: flex;
+      text-transform: uppercase;
 
   }
   .container .content
   {
-      padding-top: 94px;
-      padding-bottom: 94px;
-      display: flex;
-     flex-wrap: nowrap;
+    padding-top: 94px;
+    display: flex;
+    flex-wrap: nowrap;
 } 
  .content .item{
       
@@ -251,6 +265,10 @@ h3{
   }
 
   /* виды услуг*/
+  .photo{
+      padding-top: 94px;
+      padding-bottom: 94px;
+  }
 
 .photo .photo-title{
     color:var(--title-text-color);
@@ -259,7 +277,7 @@ h3{
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
-        padding: 94px 215px 94px 215px;
+        margin-bottom: 50px;
         
 }
 .photo-title{
@@ -267,13 +285,16 @@ h3{
 }
 .img{
     display: flex;
-    flex-wrap: wrap;
-
+    flex-wrap: nowrap;
+    margin-left: -30px;
+    margin-top: -30px;
 }
-.img-work{
-    margin-right: 30px;
+.img > .img-work{
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
 }
-.img-work:nth-child(3n){
+.img-work:nth-child(n+3){
     margin-right: 0;
 }
 
@@ -284,48 +305,55 @@ h3{
 .team-photo{
     color: var(--title-text-color);
     font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
-        text-align: center;
-        margin-bottom: 50px;
-        padding-top: 94px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+        
 }
 
 .team{
     background-color:#F5F4FA ;
-    text-align: center;  
+    text-align: center; 
+    padding-bottom: 94px; 
 }
 .img-people{
     display: flex;
     flex-wrap: nowrap;
-    padding-bottom: 94px;
+    
 }
 .photo-people{
     margin-right: 30px;
     background-color: #FFFFFF;
-  
-border: 1px solid #F5F4FA;
+    background: #FFFFFF;
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    
    
 }
 
 .photo-people:nth-child(4n){
         margin-right: 0;}
 
+.photo-people .text {
+padding-top: 30px ;
+padding-bottom: 30px ;
+
+}      
+
 .team-people{
     margin-bottom: 10px;
     margin-top: 0;
    
 }
-.paragraph{
-    padding-bottom:30px;
-}
-
 
 /*как найти нас (footer)*/
 
 .footer{
     background-color:var(--background-color);
-    padding: 60px 215px 60px 215px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .logo-footer{
     color: var(--color-color);
@@ -385,15 +413,19 @@ border: 1px solid #F5F4FA;
      clip-path: inset(50%);
      margin: -1px;
  }
+ .project{
+     padding-top: 94px;
+     padding-bottom: 94px;
+ }
  .button-project{
      display: flex;
      justify-content:center;
      margin-bottom: 50px;
-     padding-top: 94px;
+    
     
       
  }
-.button-project.list{
+.list{
     margin-right: 8px;
 }
 .button-project.list:last-child {
@@ -414,7 +446,7 @@ border: 1px solid #F5F4FA;
     line-height: 1.6;
 
     padding: 6px 22px 6px 22px;
-    margin-right: 8px;
+   
      }
  
     
@@ -430,18 +462,33 @@ border: 1px solid #F5F4FA;
 .gallery{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    
+    
     
 }
-.gallery .item{
-    width: 370px;
-  
-margin-right: 30px;
-margin-bottom: 30px;
-border: 1px solid #EEEEEE;
+.gallery > .item{
+ flex-basis: calc((100% - 90px)/3);
+ margin-left: 30px;
+ margin-top: 30px;
+   
+
 }
-.gallery .item:nth-child(3n)
+
+
+.gallery:nth-child(n+7)
 {
-    margin-right: 0;
+    margin-bottom: 0;
+}
+.help{
+
+    padding: 20px 24px 20px 24px;
+    border: 1px solid #EEEEEE;
+   
+    
+    
+    
 }
 
 
@@ -453,8 +500,7 @@ border: 1px solid #EEEEEE;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
-        padding-top: 20px;
-        padding-left: 24px;
+        
 }
         
 
@@ -462,8 +508,7 @@ border: 1px solid #EEEEEE;
     color: var(--primary-text-color);
         font-size: 16px;
         line-height: 1.9;
-        padding-left: 24px;
-        padding-bottom: 20px;
+        
 
 }
 
