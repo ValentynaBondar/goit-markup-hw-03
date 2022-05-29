@@ -72,6 +72,7 @@ h3{
 .page-header{
     border-bottom: 25px;
     margin: 0;
+    border-bottom: 1px solid #ECECEC ;
 }
 .main-nav {
     display: flex;
@@ -174,6 +175,7 @@ h3{
      color:var(--color-color);
      text-align: center;
      padding: 200px 0;
+   
      
      
  }
@@ -189,6 +191,9 @@ h3{
      line-height: 1.36;
      text-transform: uppercase;
      letter-spacing: 0.06em;
+     max-width: 696px;
+     margin-left: auto;
+     margin-right: auto;
      
      
      
@@ -376,13 +381,18 @@ letter-spacing: 0.03em;
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.logo{
+    margin-bottom: 20px;
+}
 
 .logo-footer{
     color: var(--color-color);
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
-        line-height: 1.9;   
+        line-height: 1.9;
+        
+
 
 }
 .word{
@@ -497,6 +507,8 @@ letter-spacing: 0.03em;
  flex-basis: calc((100% - 90px)/3);
  margin-left: 30px;
  margin-top: 30px;
+ border-bottom: 1px solid #EEEEEE;
+ 
  
 
  
@@ -510,8 +522,7 @@ letter-spacing: 0.03em;
 .help{
 
     padding: 20px 24px 20px 24px;
-    border: 1px solid #EEEEEE;
-    border-top: 0;
+   
     
 }
 
@@ -524,7 +535,7 @@ letter-spacing: 0.03em;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
-        margin-bottom:10px;
+        margin-bottom: 4px;
         
 }
         
